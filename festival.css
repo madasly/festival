@@ -1,0 +1,658 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+    background-color: #B70f0a;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#brand {
+    font-family: 'Bad Script', cursive;
+    font-size: 1.3em;
+}
+
+a {
+    color: #FFF1d7 !important;
+}
+
+.fa-camera-retro {
+    margin-right: 20px;
+}
+
+.navbar-nav.nav-pills {
+    font-family: 'Economica', sans-serif;
+    font-size: 24px;
+}
+header{
+    height: 100%;
+}
+.home-header-image {
+    height: calc(100% - 103px);
+    background: linear-gradient(rgba(243, 230, 199, 0.8), rgba(243, 230, 199, 0.8)), url('img/cinema.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+}
+.header-image {
+    background: linear-gradient(rgba(243, 230, 199, 0.8), rgba(243, 230, 199, 0.8)), url('img/cinema.jpg') center 38% no-repeat; 
+}
+.left-part{
+    height: 19.6vw;
+}
+.left-first-text{
+    text-align: end;
+    height: 13vw;
+}
+#left1,
+#left2 {
+    font-family: 'Amatic SC', sans-serif;
+    color: #B70f0a;
+}
+
+#left1 {
+    font-size: 11em;
+    font-weight: 400;
+}
+
+#left2 {
+    font-size: 7em;
+    font-weight: 700;
+
+}
+#left-second-text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding: 14px 32px;
+    background-image: linear-gradient(black, black),
+    linear-gradient(black, black),
+    linear-gradient(black, black),
+    linear-gradient(black, black);
+    background-repeat: no-repeat;
+    background-size: 2px 70%, 50% 2px, 3px 70%, 50% 3px, calc(100% - 8px) calc(100% - 8px);
+    background-position: left bottom, left bottom, right top, right top, 3px 3px;
+}
+
+.right-part{
+    margin-left: 2%;
+}
+#first-sentence {
+    font-family: 'Economica', sans-serif;
+    font-size: 3.5em;
+    line-height: 67px;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    margin: -5px 0;
+}
+
+#second-sentence {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 4.3em;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0.03rem;
+    margin: -5px 0 -15px 0;
+}
+
+#third-sentence {
+    font-family: 'Economica', sans-serif;
+    font-size: 3em;
+    margin: 0;
+    letter-spacing: 0.5rem;
+}
+
+.date-button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    background-color: #B70f0a;
+    text-align: center;
+    color: white;
+}
+.date-button.page-home{
+    font-size: 2.3em;
+    padding: 2px 0;
+    margin-bottom: 18px;
+}
+.date-button.page-film{
+    font-size: 18px;
+    width: 280px;
+}
+.around-text{
+    font-family: 'Economica', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.4em;
+}
+.center-text{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.chevron{
+    position: absolute;
+    bottom: 3%;
+    left:50%;
+}
+.chevron1 {
+    color: #B70f0a;
+    opacity: 0.4;
+    margin-bottom: -30px;
+}
+
+.chevron2 {
+    color: #B70f0a;
+    opacity: 0.6;
+    margin-bottom: -40px;
+}
+
+.chevron3 {
+    color: #B70f0a;
+}
+
+.ribbon {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 4em;
+    background-color: #B70f0a;
+    color: #FFF4D4;
+    width: 30%;
+    position: absolute;
+    text-align: center;
+    bottom: 13%;
+    right: -7%;
+    transform: rotate(-45deg);
+}
+
+
+@media (min-width: 1600px) { 
+    .container{
+        max-width: 1500px;
+    }
+ }
+/*Contenu page Home*/
+
+.home{
+    width: 100%;
+}
+
+
+.title-content {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 30px 0;
+}
+.title-category{
+    font-family: 'Economica', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 42px;
+    margin: 30px 0;
+    color: grey!important;
+
+}
+.title-content::after{
+    content: '';
+    display: inline-block;  
+    border-bottom: 4px solid#B70f0a;
+}
+
+.title-content.first::after {
+    width: 10%;
+    margin-left: 2%;
+}
+.title-content.second::after {
+    width: 10%;
+    margin-left: 2%;
+}
+.title-content.third::after {
+    width: 20.545%;
+    margin-left: 4%;
+}
+.title-content.fourth::after {
+    width: 20.545%;
+    margin-left: 4%;
+}
+.title-content.fifth::after {
+    width: 8%;
+    margin-left: 1.5%;
+}
+.title-content.sixth {
+    overflow: initial;
+}
+.title-content.sixth::after {
+    width: 10%;
+    margin-left: 2.5%;
+}
+.title-content.seventh::after {
+    width: 20.70%;
+    margin-left: 4.5%;
+}
+.title-content.eighth::after {
+    width: 8%;
+    margin-left: 2%;
+}
+.topic{
+    font-family: 'Economica', sans-serif;
+    font-size: 2.5em; 
+}
+
+.paragraphe {
+    margin-bottom: 30px;
+}
+
+.paragraphe-title {
+    font-family: 'Economica', sans-serif;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.paragraphe-content {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    line-height: 26px;
+    color: grey;
+}
+
+.text-actu {
+    width: auto;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #B70f0a;
+}
+
+.carousel-caption {
+    bottom: 135px;
+    left: 10%;
+}
+
+.h3 {
+    font-family: 'Economica', sans-serif;
+    text-shadow: #000;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.h5 {
+    font-family: 'Economica', sans-serif;
+    font-size: 24px;
+    color: #B70f0a;
+
+}
+
+.second-part {
+    margin: 60px 0;
+}
+
+.bande-annonce {
+    position: relative;
+    margin: 30px 0;
+}
+
+.titre-film {
+    font-family: 'Economica', sans-serif;
+    font-size: 34px;
+}
+
+.icone-lecture {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: black;
+}
+
+.section-miniature {
+    margin: 50px 0 20px 0;
+}
+.img-responsive1{
+    width:100%;
+    height: 300px;
+}
+.img-responsive2{
+    width:100%;
+    height: auto;
+}
+.img-responsive3{
+    width:100%;
+    height: 400px;
+}
+.figure.last{
+    display: block;
+}
+.figure-caption{
+    margin-top: 10px;
+    font-family: 'Economica', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.2rem;
+    color: black;
+}
+.figure-caption.text-start{
+    margin-top: 10px;
+    font-family: 'Economica', sans-serif;
+    font-size: 2em;
+    letter-spacing: 0.2rem;
+    color: black;
+}
+/* ACTU */
+.main-img-actu{
+    position: static;
+}
+.actu-card{
+    position: relative;
+    bottom: 90%;
+    left: 100%;
+    border: none;
+    border-top: 10px solid#B70f0a;
+    border-radius: 0%;
+    font-family: 'Economica', sans-serif;
+}
+.card-text{
+    display: inline-block;
+    width: 50%;
+    background-color: #B70f0a;
+    color: #FFF;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+.calendar-actu{
+    color: #B70f0a;
+}
+.img-responsive4{
+    width:25%;
+    height: 100%;
+    padding: 1.5%;
+}
+.img-responsive4:first-of-type{
+    padding-top: 0;
+}
+.sumarry{
+    font-family: 'Economica', sans-serif;   
+}
+.sumarry p{
+    font-size: 18px;
+}
+/*FOOTER*/
+.footer{
+    position: relative;
+    color: white;
+    background-color: #000;
+    padding: 20px 70px;
+
+}
+.title-footer{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 1.6em;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 20px 0;
+}
+.particulars{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
+} 
+.address{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
+}
+.social-icone{
+    color: white;
+}
+/* MEDIA QUERIES */
+@media (max-width: 358px) {
+    #brand{
+        font-size: 0.55em;
+    }
+    .navbar-nav.nav-pills{
+        font-size: 1em!important;
+    }
+    .fa-camera-retro{
+        font-size: 1.2em;
+    }
+    .home-header-image{
+        display: block!important;
+        text-align: center;
+        height: 70%;
+    }
+    .left-part{
+        height: auto;
+    }
+    .left-first-text{
+        text-align: center;
+        height: 34vw;
+    }
+    #left1{
+        font-size: 5em;
+    }
+    #left2{
+        font-size: 3em;
+    }
+    #left-second-text{
+        display: none;
+    }
+    .right-part{
+        margin-left: 0;
+    }
+    #first-sentence{
+        font-size: 1.6em;
+        letter-spacing: 0.1em;
+        line-height: 0.8em;
+    }
+    #second-sentence{
+        font-size: 1.8em;
+        letter-spacing: 0.07em;
+        line-height: 2em;
+
+    }
+    #third-sentence{
+        font-size: 1.2em;
+        letter-spacing: 0.25em;
+        line-height: 1.5em;
+    }
+    .date-button{
+        font-size: 0.8em!important;
+        text-align: center;
+    }
+    .chevron{
+        bottom: 4%;
+        left:46%;
+    }
+    .ribbon{
+        bottom: 4%;
+        right: -9%;
+        font-size: 1.3em;
+        width: 40%;
+    }
+    /* Content*/
+    .title-content{
+        font-size: 1.3em!important;
+    }
+    .title-content.first::after,
+    .title-content.second::after,
+    .title-content.third::after,
+    .title-content.fourth::after,
+    .title-content.fifth::after
+    {
+        width: 20%!important;
+    }
+    .section-miniature{
+        text-align: center;
+    }
+    .paragraphe-title{
+        font-size: 1.2em!important;
+    }
+    .paragraphe-content{
+        font-size: 0.9em!important;
+    }
+    .titre-film{
+        font-size: 1.5em!important;
+    }
+    .icone-lecture{
+        top:0.5%!important;
+        font-size: 0.8em!important;
+    }
+    .title-footer{
+        font-size: 1.3em;
+    }
+    .particulars,.address{
+        font-size: 0.7em;
+    }
+    .fa-facebook-f,.fa-twitter,.fa-instagram{
+        font-size: 1.5em;
+    }
+    .baf{
+        margin: 2% 0;
+    }
+    .img-responsive1{
+        width:100%;
+        height: 100%;
+    }
+ 
+}
+@media (min-width: 359px) and (max-width: 575px){
+    #brand{
+        font-size: 0.65em;
+    }
+    .navbar-nav.nav-pills{
+        font-size: 1.2em!important;
+    }
+    .fa-camera-retro{
+        font-size: 1.2em;
+    }
+    .left-part{
+        height: 57vw;
+    }
+    .home-header-image{
+        display: block!important;
+        height: 70%;
+    }
+    .left-part{
+        height: auto;
+        padding-top: 20px;
+    }
+    .left-first-text{
+        text-align: center;
+        height: 34vw;
+    }
+    #left1{
+        font-size: 5em;
+    }
+    #left2{
+        font-size: 3em;
+    }
+    #left-second-text{
+        display: none;
+    }
+    .right-part{
+        margin-left: 0;
+        padding: 0 55px;
+    }
+    #first-sentence{
+        font-size: 1.6em;
+        letter-spacing: 0.1em;
+        line-height: 0.8em;
+    }
+    #second-sentence{
+        font-size: 1.8em;
+        letter-spacing: 0.07em;
+        line-height: 2em;
+
+    }
+    #third-sentence{
+        font-size: 1.2em;
+        letter-spacing: 0.25em;
+        line-height: 2em;
+    }
+    .date-button{
+        font-size: 1.3em!important;
+        width: auto;
+    }
+    .text-button{
+        margin-bottom: 0px; 
+    }
+    .chevron{
+        font-size: 0.8em;
+        bottom: 20%;
+        left:46%;
+    }
+    .chevron1{
+        margin-bottom: -1.8em;
+    }
+    .chevron2{
+        margin-bottom: -2.5em;
+    }
+    .chevron3{
+        margin-bottom: -1.0em;
+    }
+    .ribbon{
+        bottom: 0%;
+        right: 0%;
+        font-size: 1.3em;
+        width: 30%;
+        transform: none;
+    }
+    .carousel-caption {
+        bottom: 1%;
+        left: 10%;
+    }
+    .text-carousel{
+        font-size: 0.7em;
+    }
+    /* Content*/
+    .title-content{
+        font-size: 1.5em!important;
+    }
+    .title-content.first::after,
+    .title-content.second::after,
+    .title-content.third::after,
+    .title-content.fourth::after
+    {
+        width: 20%!important;
+    }
+    .section-miniature{
+        text-align: center;
+    }
+    .paragraphe-title{
+        font-size: 1.2em!important;
+    }
+    .paragraphe-content{
+        font-size: 0.9em!important;
+    }
+    .titre-film{
+        font-size: 1.5em!important;
+    }
+    .icone-lecture{
+        top:0.5%!important;
+        font-size: 0.8em!important;
+    }
+    .title-footer{
+        font-size: 1.3em;
+    }
+    .particulars,.address{
+        font-size: 0.7em;
+    }
+    .fa-facebook-f,.fa-twitter,.fa-instagram{
+        font-size: 1.5em;
+    }
+    .baf{
+        margin: 2% 0;
+    }
+    .img-responsive1{
+        width:100%;
+        height: 100%;
+    }
+    .text-footer{
+        text-align: center;
+    }
+    .last-sentence{
+        letter-spacing: 0.3em;
+    }
+}
