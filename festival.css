@@ -3,6 +3,7 @@ body {
     width: 100%;
     height: 100%;
 }
+/******************** Navbar  ***********************/
 
 .navbar.navbar-expand-lg.navbar-light {
     background-color: #B70f0a;
@@ -27,6 +28,7 @@ a {
     font-family: 'Economica', sans-serif;
     font-size: 24px;
 }
+/************************** Header ***************************/
 header{
     height: 100%;
 }
@@ -171,17 +173,17 @@ header{
 }
 
 
+/*************************** Main Content ****************************/
+
 @media (min-width: 1600px) { 
     .container{
         max-width: 1500px;
     }
  }
-/*Contenu page Home*/
 
 .home{
     width: 100%;
 }
-
 
 .title-content {
     font-family: 'Fjalla One', sans-serif;
@@ -277,13 +279,12 @@ header{
 .h3 {
     font-family: 'Economica', sans-serif;
     text-shadow: #000;
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 2em;
 }
 
 .h5 {
     font-family: 'Economica', sans-serif;
-    font-size: 24px;
+    font-size: 1.5em;
     color: #B70f0a;
 
 }
@@ -341,7 +342,25 @@ header{
     letter-spacing: 0.2rem;
     color: black;
 }
-/* ACTU */
+
+/*********************** Main Content Page Actu ************************/
+
+.custom-select{
+    margin-top: 80px;
+    width: 5em;
+    height: auto;
+    border: none;
+    font-family: 'Economica', sans-serif;
+    letter-spacing: 0.01em;
+    font-size: 42px;
+    color: grey!important;
+    background: url(img/arrow.svg) no-repeat right #fff;
+    -webkit-appearance: none;
+}
+.fa-angle-down{
+    color: #B70f0a;
+}
+
 .main-img-actu{
     position: static;
 }
@@ -353,6 +372,22 @@ header{
     border-top: 10px solid#B70f0a;
     border-radius: 0%;
     font-family: 'Economica', sans-serif;
+}
+.actu-card2{
+    position: relative;
+    bottom: 40%;
+    border: none;
+    border-top: 10px solid#B70f0a;
+    border-radius: 0%;
+    font-family: 'Economica', sans-serif;
+}
+.card-description{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    color: grey;
+}
+.actu-row{
+    margin: -50px 0!important;
 }
 .card-text{
     display: inline-block;
@@ -380,7 +415,30 @@ header{
 .sumarry p{
     font-size: 18px;
 }
-/*FOOTER*/
+
+.pagination{
+    display: inline;
+    font-family: 'Economica', sans-serif;
+    font-size: 1.5em; 
+    font-weight: 600; 
+    letter-spacing: 0.1em; 
+    color: #363636;  
+}
+.line::after{
+    content: '';
+    display: inline-block;  
+    border-bottom: 4px solid#B70f0a;
+    width: 47%;
+    margin-left: 34%;
+    margin-bottom: -10%;
+}
+.active-pagination{
+    display: inline;
+    color: #B70f0a;
+    font-size: 1.25em;
+}
+
+/************************** FOOTER ********************************/
 .footer{
     position: relative;
     color: white;
@@ -406,117 +464,11 @@ header{
 .social-icone{
     color: white;
 }
-/* MEDIA QUERIES */
-@media (max-width: 358px) {
-    #brand{
-        font-size: 0.55em;
-    }
-    .navbar-nav.nav-pills{
-        font-size: 1em!important;
-    }
-    .fa-camera-retro{
-        font-size: 1.2em;
-    }
-    .home-header-image{
-        display: block!important;
-        text-align: center;
-        height: 70%;
-    }
-    .left-part{
-        height: auto;
-    }
-    .left-first-text{
-        text-align: center;
-        height: 34vw;
-    }
-    #left1{
-        font-size: 5em;
-    }
-    #left2{
-        font-size: 3em;
-    }
-    #left-second-text{
-        display: none;
-    }
-    .right-part{
-        margin-left: 0;
-    }
-    #first-sentence{
-        font-size: 1.6em;
-        letter-spacing: 0.1em;
-        line-height: 0.8em;
-    }
-    #second-sentence{
-        font-size: 1.8em;
-        letter-spacing: 0.07em;
-        line-height: 2em;
 
-    }
-    #third-sentence{
-        font-size: 1.2em;
-        letter-spacing: 0.25em;
-        line-height: 1.5em;
-    }
-    .date-button{
-        font-size: 0.8em!important;
-        text-align: center;
-    }
-    .chevron{
-        bottom: 4%;
-        left:46%;
-    }
-    .ribbon{
-        bottom: 4%;
-        right: -9%;
-        font-size: 1.3em;
-        width: 40%;
-    }
-    /* Content*/
-    .title-content{
-        font-size: 1.3em!important;
-    }
-    .title-content.first::after,
-    .title-content.second::after,
-    .title-content.third::after,
-    .title-content.fourth::after,
-    .title-content.fifth::after
-    {
-        width: 20%!important;
-    }
-    .section-miniature{
-        text-align: center;
-    }
-    .paragraphe-title{
-        font-size: 1.2em!important;
-    }
-    .paragraphe-content{
-        font-size: 0.9em!important;
-    }
-    .titre-film{
-        font-size: 1.5em!important;
-    }
-    .icone-lecture{
-        top:0.5%!important;
-        font-size: 0.8em!important;
-    }
-    .title-footer{
-        font-size: 1.3em;
-    }
-    .particulars,.address{
-        font-size: 0.7em;
-    }
-    .fa-facebook-f,.fa-twitter,.fa-instagram{
-        font-size: 1.5em;
-    }
-    .baf{
-        margin: 2% 0;
-    }
-    .img-responsive1{
-        width:100%;
-        height: 100%;
-    }
- 
-}
+
+/************************** MEDIA QUERIES *****************************/
+
+
 @media (min-width: 359px) and (max-width: 575px){
     #brand{
         font-size: 0.65em;
@@ -600,11 +552,23 @@ header{
         transform: none;
     }
     .carousel-caption {
-        bottom: 1%;
-        left: 10%;
+        width: 100%;
+        bottom: 0.2%;
+        left: 0;
+        padding: 5%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .h3{
+        font-size: 1.4em;
+        margin-bottom: 0!important;
+    }
+    .h5{
+        font-size: 1.2em;
+        margin-bottom: 0!important;
     }
     .text-carousel{
-        font-size: 0.7em;
+        font-size: 0.5em;
+        margin-bottom: 0!important;
     }
     /* Content*/
     .title-content{
