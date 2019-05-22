@@ -71,6 +71,80 @@
             <span class="chevron3"><i class="fas fa-angle-down fa-4x"></i></span>
         </div>
     </header>
+    <button type="button" id="inscriptionButton" class="btn btn-default btn-lg" data-toggle="modal" data-target=".bd-example-modal-lg">
+        Pré-inscriptions
+    </button>
+    <button type="button" id="inscriptionButton2" class="btn btn-default btn-lg" data-toggle="modal" data-target=".bd-example-modal-lg">
+            Pré-inscriptions
+        </button>
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exempleModalLabel">Pré-inscriptions au Festival</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="col-form-label label-1">Votre nom (obligatoire)</label>
+                            <input type="text" class="form-control input-1" id="name" placeholder="Nom">
+                        </div>
+                        <div class="form-group">
+                                <label for="email" class="col-form-label label-1">Votre email</label>
+                                <input type="email" class="form-control input-1" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                                <label for="phone" class="col-form-label label-1">Votre téléphone</label>
+                                <input type="text" class="form-control input-1" id="phone" placeholder="Mobile ou telephone">
+                        </div>
+                        <div class="form-group">
+                                 <label for="reservation-film" class="col-form-label label-1">Votre choix de film</label>
+                                <select class="form-control input-1" id="reservation-film">
+                                    <option selected>Choisissez votre séance</option>
+                                    <option value="ReadyPlayerOne">Ready Player One de Steven Spielberg, Séance du 05 Août à 18h</option>
+                                    <option value="PentagonPapers">Pentagon Papers de Steven Spielberg, Séance du 05 Août à 20h</option>
+                                    <option value="LabyrintheDePan">Le Labyrinthe de Pan de Guillermo Del Toro, Séance du 05 Août à 22h</option>
+                                    <option value="CharlieChocolaterie">Charlie et la Chocolaterie de Tim Burton, Séance du 06 Août à 18h</option>
+                                    <option value="CoeurOcean">Au Coeur de l'Océan de Ron Howard, Séance du 06 Août à 20h</option>
+                                    <option value="FormeDeséance duau">La Forme de l'Eau de Guillermo Del Toro, Séance du 06 Août à 22h</option>
+                                    <option value="AventuresTintin">Les Aventures de Tintin de Ron Howard, Séance du 07 Août à 18h</option>
+                                    <option value="DaVinciCode">Da Vinci Code de Ron Howard, Séance du 07 Août à 20h</option>
+                                    <option value="AngesDemons">Anges et Démons de Ron Howard, Séance du 07 Août à 22h</option>
+                                    <option value="Dumbo">Dumbo de Tim Burton, Séance du 08 Août à 18h</option>
+                                    <option value="BlueJasmine">Blue Jasmine de Woody Allen, Séance du 08 Août à 20h</option>
+                                    <option value="Inferno">Inferno de Tim Burton, Séance du 08 Août à 22h</option>
+                                </select>
+                            </div>
+                        <div class="form-group">
+                                <label for="reservation-number" class="col-form-label label-1">Votre nombre de réservation(s)</label>
+                                <select class="form-control input-1" id="reservation-number">
+                                    <option selected>Choisissez le nombre de places</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning" onclick="reservate()" id="closeButtonModal">Réserver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-8 left-content">
@@ -83,7 +157,8 @@
                                 <div class="carousel-caption d-block text-left">
                                     <p class="h5">Pour Enfants</p>
                                     <p class="h3">Dumbo</p>
-                                    <p class="text-carousel">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque minus
+                                    <p class="text-carousel">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Neque minus
                                         necessitatibus sed excepturi impedit, esse nisi velit nihil. </p>
                                 </div>
                             </div>
@@ -92,7 +167,8 @@
                                 <div class="carousel-caption d-block text-left">
                                     <p class="h5">Fantastique</p>
                                     <p class="h3">La Forme De l'Eau</p>
-                                    <p class="text-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo eaque obcaecati
+                                    <p class="text-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quo eaque obcaecati
                                         magnam fugit ab nihil eos officia quia dolorem?</p>
                                 </div>
                             </div>
@@ -101,7 +177,8 @@
                                 <div class="carousel-caption d-block text-left">
                                     <p class="h5">Thriller</p>
                                     <p class="h3">Da Vinci Code</p>
-                                    <p class="text-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, blanditiis
+                                    <p class="text-carousel">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Deleniti, blanditiis
                                         officiis? </p>
                                 </div>
                             </div>
@@ -129,7 +206,7 @@
                 </div>
                 <h2 class="title-content second">LES GRANDS REALISATEURS</h2>
                 <div class="row justify-content-lg-between section-miniature">
-                    <div class="col-sm-12 col-lg-2">
+                    <div class="col-sm-12 col-lg-2 mb-3">
                         <figure class="figure mx-sm-auto">
                             <img src="img/gdeltoro.jpg" alt="" class="img-responsive2">
                             <figcaption class="figure-caption text-center">Guillermo del Toro</figcaption>
@@ -226,7 +303,8 @@
                     75018 Paris
                 </p>
             </div>
-            <div class="col-lg-1 d-flex flex-lg-column flex-sm-row justify-content-between justify-content-lg-end align-items-lg-center">
+            <div
+                class="col-lg-1 d-flex flex-lg-column flex-sm-row justify-content-between justify-content-lg-end align-items-lg-center">
                 <span class="social-icon my-lg-3">
                     <i class="fab fa-facebook-f fa-2x"></i>
                 </span>
@@ -246,7 +324,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script>
         function myFunction(x) {
             if (x.matches) { // If media query matches
@@ -255,6 +333,7 @@
                         $('html,body').animate({
                             scrollTop: 650
                         }, 1000);
+ 
                     });
                 });
             } else {
@@ -264,13 +343,38 @@
                             scrollTop: 1000
                         }, 1000);
                     });
+                    window.addEventListener('scroll', () => {
+                        const scrolled = window.scrollY;
+                        console.log(scrolled);
+                        
+                        if (scrolled > 130) {
+                           $('#inscriptionButton').fadeOut(1200); 
+                           $('#inscriptionButton2').fadeIn(1400);
+                            
+                        } else {
+                            $('#inscriptionButton').fadeIn(700); 
+                           $('#inscriptionButton2').fadeOut(600);
+                        };
+                        
+                    });
                 });
             }
+              
         }
 
         var x = window.matchMedia("(max-width: 575px)")
         myFunction(x) // Call listener function at run time
         x.addListener(myFunction) // Attach listener function on state changes
+        function reservate() {
+            swal({
+                title: "Festival Films de Plein Air",
+                text: "Votre réservation a été enregistrée!",
+                icon: "success",
+            });
+            setTimeout(() => {
+                $(".bd-example-modal-lg").modal("hide");        
+            }, 2000);
+        }
     </script>
 
 </body>
