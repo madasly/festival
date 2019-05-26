@@ -77,6 +77,10 @@
     <button type="button" id="inscriptionButton2" class="btn btn-default btn-lg" data-toggle="modal" data-target=".bd-example-modal-lg">
             Pré-inscriptions
         </button>
+    <button type="button" id="inscriptionButtonHomeSm" class="btn btn-default btn-sm d-sm-block d-lg-none d-xl-none" data-toggle="modal" data-target=".bd-example-modal-lg">
+        Pré-inscriptions
+    </button>    
+
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -88,15 +92,22 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form class="needs-validation">
                         <div class="form-group">
                             <label for="name" class="col-form-label label-1">Votre nom (obligatoire)</label>
                             <input type="text" class="form-control input-1" id="name" placeholder="Nom">
+                            <div class="valid-feedback">
+                                    Looks good!
+                                  </div>
                         </div>
+                        
                         <div class="form-group">
                                 <label for="email" class="col-form-label label-1">Votre email</label>
                                 <input type="email" class="form-control input-1" id="email" placeholder="Email">
-                        </div>
+                                <div class="invalid-feedback">
+                                        Looks bad!
+                                      </div>
+                            </div>
                         <div class="form-group">
                                 <label for="phone" class="col-form-label label-1">Votre téléphone</label>
                                 <input type="text" class="form-control input-1" id="phone" placeholder="Mobile ou telephone">
@@ -139,12 +150,13 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-warning" onclick="reservate()" id="closeButtonModal">Réserver</button>
+                    <button type="submit" class="btn btn-warning" id="closeButtonModal">Réserver</button>
                 </div>
             </div>
         </div>
     </div>
     </div>
+  
     <div class="container">
         <div class="row">
             <div class="col-lg-8 left-content">
@@ -324,7 +336,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script>
         function myFunction(x) {
             if (x.matches) { // If media query matches
@@ -366,15 +378,35 @@
         myFunction(x) // Call listener function at run time
         x.addListener(myFunction) // Attach listener function on state changes
         function reservate() {
-            swal({
-                title: "Festival Films de Plein Air",
-                text: "Votre réservation a été enregistrée!",
-                icon: "success",
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 2000
             });
+            Toast.fire({
+                type: 'success',
+                title: "Votre réservation a été enregistrée!",
+            })
             setTimeout(() => {
                 $(".bd-example-modal-lg").modal("hide");        
             }, 2000);
         }
+        (function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    var submitButton = document.getElementById("closeButtonModal");
+    submitButton.addEventListener('click', function() {
+       /* var form = document.getElementsByClassName("needs-validation");
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');*/
+        reservate();
+    }, false);
+  }, false);
+})();
     </script>
 
 </body>
