@@ -249,7 +249,7 @@ z-index: 100;
 
 .title-content {
     font-family: 'Fjalla One', sans-serif;
-    font-size: 42px;
+    font-size: 2em;
     font-weight: bold;
     overflow: hidden;
     margin: 30px 0;
@@ -257,7 +257,7 @@ z-index: 100;
 .title-category{
     font-family: 'Economica', sans-serif;
     letter-spacing: 0.05em;
-    font-size: 42px;
+    font-size: 2em;
     margin: 30px 0;
     color: grey!important;
 
@@ -309,13 +309,12 @@ z-index: 100;
 }
 
 .paragraphe {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .paragraphe-title {
     font-family: 'Economica', sans-serif;
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 1.8em;
 }
 
 .paragraphe-content {
@@ -514,7 +513,26 @@ z-index: 100;
     color: #B70f0a;
     font-size: 1.25em;
 }
-
+/************************** CONTACT *******************************/
+   iframe{
+       width: 100%;
+       height: 650px;
+    } 
+   .contact-form{
+       margin-top: 40px;
+   } 
+   .contact-form h2{
+    font-family: 'Bad Script', cursive;
+    font-weight: 700;
+   }
+   .contact-form h3{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 34px;
+   }
+   .coordonnees{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
+   }
 /************************** FOOTER ********************************/
 .footer{
     position: relative;
@@ -671,7 +689,7 @@ z-index: 100;
         position: fixed;
         background-color: #B70f0a!important;
         color: white;
-        top: 370px;
+        bottom: 5%;
         right: 34%;
         z-index: 100;
         }
@@ -684,7 +702,7 @@ z-index: 100;
         position: fixed;
         background-color: #B70f0a!important;
         color: white;
-        top: 370px;
+        bottom: 5%;
         right: 34%;
         z-index: 100;
         }
@@ -893,8 +911,8 @@ z-index: 100;
     }
     .chevron{
         position: absolute;
-        bottom: 22%;
-        left:50%;
+        bottom: 36%;
+        left:46%;
     }
 .ribbon {
     font-family: 'Fjalla One', sans-serif;
@@ -904,16 +922,74 @@ z-index: 100;
     width: 35%;
     position: absolute;
     text-align: center;
-    bottom: 3%;
+    bottom: 5%;
     right: -10%;
     transform: rotate(-45deg);
 }
 /*inscription*/
+header{
+    height: 85%;
+}
 #inscriptionButton {
     position: fixed;
     background-color: #B70f0a!important;
     color: white;
-    top: 600px;
+    top: 880px;
     right: 40%;
     z-index: 100;
+}
+.left-content,.right-content{
+    margin-top: -160px;
+}
+.title-content{
+    font-size: 1.55em;
+}
+.title-content.second{
+    margin: 55px 0;
+}
+.title-content.first::after {
+    width: 15%;
+    margin-left: 2%;
+}
+.title-content.second::after {
+    width: 18%;
+    margin-left: 2%;
+}
+.title-content.third::after {
+    width: 24%;
+    margin-left: 4%;
+}
+.title-content.fourth::after {
+    width: 25%;
+    margin-left: 4%;
+}
+.paragraphe {
+    margin-bottom: 10px;
+}
+.paragraphe-title {
+    font-size: 1.5em;
+}
+.paragraphe-content {
+    font-size: 1em;
+}
+.h5{
+    font-size: 1.1em;
+}
+.h3{
+    font-size: 1.2em;
+}
+.section-miniature {
+    margin: 80px 0 65px 0;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    bottom: 5px;
+    left: 0;
+    padding: 5%;
+
+}
+.img-responsive1 {
+    width: 100%;
+    height: 130px;
 }

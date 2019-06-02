@@ -420,15 +420,23 @@
     function reservate() {
         const Toast = Swal.mixin({
             toast: true,
-            position: 'top-end',
+            position: 'center',
             showConfirmButton: false,
             timer: 2000
         });
 
-        Toast.fire({
-        type: 'success',
-        title: "Votre réservation a été enregistrée!",
-        })
+        if (window.matchMedia("(max-width: 575px)").matches) {
+            Toast.fire({
+            type: 'success',
+            width: 320,
+            title: "Votre réservation a été enregistrée!",
+            })
+        } else {
+            Toast.fire({
+            type: 'success',
+            title: "Votre réservation a été enregistrée!",
+            })
+        }
         setTimeout(() => {
             $(".bd-example-modal-lg").modal("hide");        
         }, 2000);
@@ -438,12 +446,6 @@
             window.addEventListener('load', function() {
             var submitButton = document.getElementById("closeButtonModal");
             submitButton.addEventListener('click', function() {
-       /* var form = document.getElementsByClassName("needs-validation");
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');*/
         reservate();
     }, false);
   }, false);
