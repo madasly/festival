@@ -42,131 +42,135 @@
             </div>
         </nav>
         <div class="header-image pt-5">
-                <div class="row justify-content-center mx-0 head-text">
-                    <div class="col-auto">
-                        <p class="around-text text-uppercase pt-2 ">Festival de </p>
-                    </div>
-                    <div class="col-auto">
-                        <p class="center-text text-uppercase">films de plein air </p>
-                        <p class="date-button page-film font-italic mx-auto px-4 py-2 mb-0">5 au 8 août 2019</p>
-                    </div>
-                    <div class="col-auto ml-lg-2 last-sentence">
-                        <p class="around-text text-uppercase pt-2">Parc Monceau</p>
-                    </div>
+            <div class="row justify-content-center mx-0 head-text">
+                <div class="col-auto">
+                    <p class="around-text text-uppercase pt-2 ">Festival de </p>
+                </div>
+                <div class="col-auto">
+                    <p class="center-text text-uppercase">films de plein air </p>
+                    <p class="date-button page-film font-italic mx-auto px-4 py-2 mb-0">5 au 8 août 2019</p>
+                </div>
+                <div class="col-auto ml-lg-2 last-sentence">
+                    <p class="around-text text-uppercase pt-2">Parc Monceau</p>
                 </div>
             </div>
+        </div>
     </div>
-    <button type="button" id="inscriptionButton3" class="btn btn-default btn-lg d-none d-lg-block" data-toggle="modal" data-target=".bd-example-modal-lg">
+    <button type="button" id="inscriptionButton3" class="btn btn-default btn-lg d-none d-lg-block" data-toggle="modal"
+        data-target=".bd-example-modal-lg">
         Pré-inscriptions
     </button>
-    <button type="button" id="inscriptionButtonPageSm" class="btn btn-default btn-sm d d-sm-block d-lg-none d-xl-none" data-toggle="modal" data-target=".bd-example-modal-lg">
+    <button type="button" id="inscriptionButtonPageSm" class="btn btn-default btn-sm d d-sm-block d-lg-none d-xl-none"
+        data-toggle="modal" data-target=".bd-example-modal-lg">
+        Pré-inscriptions
+    </button>
+    <button type="button" id="inscriptionButtonHomeMd" class="btn btn-default btn-md d-sm-none d-md-block d-lg-none d-xl-none" data-toggle="modal" data-target=".bd-example-modal-lg">
         Pré-inscriptions
     </button> 
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exempleModalLabel">Pré-inscriptions au Festival</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="needs-validation">
-                            <div class="form-group">
-                                <label for="name" class="col-form-label label-1">Votre nom (obligatoire)</label>
-                                <input type="text" class="form-control input-1" id="name" placeholder="Nom">
-                                <div class="valid-feedback">
-                                        Looks good!
-                                      </div>
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exempleModalLabel">Pré-inscriptions au Festival</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form class="needs-validation">
+                        <div class="form-group">
+                            <label for="name" class="col-form-label label-1">Votre nom (obligatoire)</label>
+                            <input type="text" class="form-control input-1" id="name" placeholder="Nom">
+                            <div class="valid-feedback">
+                                Looks good!
                             </div>
-                            
-                            <div class="form-group">
-                                    <label for="email" class="col-form-label label-1">Votre email</label>
-                                    <input type="email" class="form-control input-1" id="email" placeholder="Email">
-                                    <div class="invalid-feedback">
-                                            Looks bad!
-                                          </div>
-                                </div>
-                            <div class="form-group">
-                                    <label for="phone" class="col-form-label label-1">Votre téléphone</label>
-                                    <input type="text" class="form-control input-1" id="phone" placeholder="Mobile ou telephone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="col-form-label label-1">Votre email</label>
+                            <input type="email" class="form-control input-1" id="email" placeholder="Email">
+                            <div class="invalid-feedback">
+                                Looks bad!
                             </div>
-                            <div class="form-group">
-                                     <label for="reservation-film" class="col-form-label label-1">Votre choix de film</label>
-                                    <select class="form-control input-1" id="reservation-film">
-                                        <option selected>Choisissez votre séance</option>
-                                        <option value="ReadyPlayerOne">Ready Player One de Steven Spielberg, Séance du 05 Août à 18h</option>
-                                        <option value="PentagonPapers">Pentagon Papers de Steven Spielberg, Séance du 05 Août à 20h</option>
-                                        <option value="LabyrintheDePan">Le Labyrinthe de Pan de Guillermo Del Toro, Séance du 05 Août à 22h</option>
-                                        <option value="CharlieChocolaterie">Charlie et la Chocolaterie de Tim Burton, Séance du 06 Août à 18h</option>
-                                        <option value="CoeurOcean">Au Coeur de l'Océan de Ron Howard, Séance du 06 Août à 20h</option>
-                                        <option value="FormeDeséance duau">La Forme de l'Eau de Guillermo Del Toro, Séance du 06 Août à 22h</option>
-                                        <option value="AventuresTintin">Les Aventures de Tintin de Ron Howard, Séance du 07 Août à 18h</option>
-                                        <option value="DaVinciCode">Da Vinci Code de Ron Howard, Séance du 07 Août à 20h</option>
-                                        <option value="AngesDemons">Anges et Démons de Ron Howard, Séance du 07 Août à 22h</option>
-                                        <option value="Dumbo">Dumbo de Tim Burton, Séance du 08 Août à 18h</option>
-                                        <option value="BlueJasmine">Blue Jasmine de Woody Allen, Séance du 08 Août à 20h</option>
-                                        <option value="Inferno">Inferno de Tim Burton, Séance du 08 Août à 22h</option>
-                                    </select>
-                                </div>
-                            <div class="form-group">
-                                    <label for="reservation-number" class="col-form-label label-1">Votre nombre de réservation(s)</label>
-                                    <select class="form-control input-1" id="reservation-number">
-                                        <option selected>Choisissez le nombre de places</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="9">9</option>
-                                        <option value="10">10</option>
-                                    </select>
-                                </div>
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-warning" id="closeButtonModal">Réserver</button>
-                    </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="col-form-label label-1">Votre téléphone</label>
+                            <input type="text" class="form-control input-1" id="phone"
+                                placeholder="Mobile ou telephone">
+                        </div>
+                        <div class="form-group">
+                            <label for="reservation-film" class="col-form-label label-1">Votre choix de film</label>
+                            <select class="form-control input-1" id="reservation-film">
+                                <option selected>Choisissez votre séance</option>
+                                <option value="ReadyPlayerOne">Ready Player One de Steven Spielberg, Séance du 05 Août à
+                                    18h</option>
+                                <option value="PentagonPapers">Pentagon Papers de Steven Spielberg, Séance du 05 Août à
+                                    20h</option>
+                                <option value="LabyrintheDePan">Le Labyrinthe de Pan de Guillermo Del Toro, Séance du 05
+                                    Août à 22h</option>
+                                <option value="CharlieChocolaterie">Charlie et la Chocolaterie de Tim Burton, Séance du
+                                    06 Août à 18h</option>
+                                <option value="CoeurOcean">Au Coeur de l'Océan de Ron Howard, Séance du 06 Août à 20h
+                                </option>
+                                <option value="FormeDeséance duau">La Forme de l'Eau de Guillermo Del Toro, Séance du 06
+                                    Août à 22h</option>
+                                <option value="AventuresTintin">Les Aventures de Tintin de Ron Howard, Séance du 07 Août
+                                    à 18h</option>
+                                <option value="DaVinciCode">Da Vinci Code de Ron Howard, Séance du 07 Août à 20h
+                                </option>
+                                <option value="AngesDemons">Anges et Démons de Ron Howard, Séance du 07 Août à 22h
+                                </option>
+                                <option value="Dumbo">Dumbo de Tim Burton, Séance du 08 Août à 18h</option>
+                                <option value="BlueJasmine">Blue Jasmine de Woody Allen, Séance du 08 Août à 20h
+                                </option>
+                                <option value="Inferno">Inferno de Tim Burton, Séance du 08 Août à 22h</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="reservation-number" class="col-form-label label-1">Votre nombre de
+                                réservation(s)</label>
+                            <select class="form-control input-1" id="reservation-number">
+                                <option selected>Choisissez le nombre de places</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-warning" id="closeButtonModal">Réserver</button>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <h2 class="title-content eighth pt-5">les actus</h2>
                 <img src="img/fetecinema.jpg" class="d-block w-100 main-img-actu" alt="">
-                <!--<div class="row">
-                    <div class="col-sm-6">
-                        <div class="card actu-card">
-                            <div class="card-body">
-                                <h5 class="card-title">La Fête du Cinéma</h5>
-                                <p class="card-text mr-3">Tous au Cinéma!!</p>
-                                <span class="date-actu"><i
-                                        class="far fa-calendar-alt mx-3 calendar-actu"></i>10-05-2019</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
                 <div class="card actu-card">
                     <div class="card-body">
                         <h5 class="card-title">La Fête du Cinéma</h5>
-                        <p class="card-text mr-3">Tous au Cinéma!!</p>
-                        <span class="date-actu"><i
-                                class="far fa-calendar-alt mx-3 calendar-actu"></i>10-05-2019</span>
+                        <p class="card-text mr-lg-3">Tous au Cinéma!!</p>
+                        <span class="date-actu"><i class="far fa-calendar-alt mx-lg-3 mx-md-1 mx-1 calendar-actu"></i>10-05-2019</span>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-sm-12">
+            <div class="col-lg-6 col-md-6 col-sm-12">
                 <form>
                     <div class="form-row">
-                        <div class="offset-lg-8 col-lg-2 col-sm-12 text-center">
+                        <div class="offset-lg-8 offset-md-6 col-md-4 col-lg-2 col-sm-12 text-center">
                             <select class="custom-select">
                                 <option selected>Catégorie...</option>
                                 <option>Sorties Ciné</option>
@@ -189,8 +193,7 @@
                     <img src="img/endgame.jpg" class="img-responsive4 mr-3 main-img-actu" alt="">
                     <div class="sumarry">
                         <h3 class="mb-0 mb-lg-2">Avengers endgames</h3>
-                        <p>Le film des Frères Russo a franchi les 2 milliards de recettes en à peine 2 semaines. Il a
-                            ainsi dépassé Titanic et ne devrait pas tarder à battre Avatar!</p>
+                        <p>Le film des Frères Russo a franchi les 2 milliards de recettes en à peine 2 semaines</p>
                     </div>
                 </div>
                 <div class="category d-inline-flex">
@@ -211,18 +214,18 @@
                 </div>
             </div>
         </div>
-        <div class="row actu-row">
-            <div class="col-lg-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
                 <img src="img/festivalcannes.jpg" class="img-responsive5 main-img-actu" alt="">
                 <div class="row d-flex justify-content-center h-25">
-                    <div class="col-lg-10 ">
+                    <div class="col-lg-10 col-md-10 px-md-1">
 
                         <div class="card actu-card2">
                             <div class="card-body">
                                 <h5 class="card-title">Festival de Cannes</h5>
-                                <p class="card-text mr-3">Tous au Cinéma!!</p>
+                                <p class="card-text mr-lg-3">Tous au Cinéma!!</p>
                                 <span class="date-actu"><i
-                                        class="far fa-calendar-alt mx-lg-3 mx-2 calendar-actu"></i>10-05-2019</span>
+                                        class="far fa-calendar-alt mx-lg-3 mx-md-1 mx-1 calendar-actu"></i>10-05-2019</span>
                                 <p class="card-description">Le Festival de Cannes aura lieu du 14 mai au 25 mai.
                                     Alejandro Gonzalez Inarittu sera le président de ce 72ème festival. </pclass>
                             </div>
@@ -231,16 +234,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <img src="img/endgame.jpg" class="img-responsive5 main-img-actu" alt="">
                 <div class="row d-flex justify-content-center h-25">
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 px-md-1">
                         <div class="card actu-card2">
                             <div class="card-body">
                                 <h5 class="card-title">Avengers endgames</h5>
-                                <p class="card-text mr-3">Recettes record!!</p>
+                                <p class="card-text mr-lg-3">Recettes record!!</p>
                                 <span class="date-actu"><i
-                                        class="far fa-calendar-alt mx-lg-3 mx-2 calendar-actu"></i>10-05-2019</span>
+                                        class="far fa-calendar-alt mx-lg-3 mx-md-1 mx-1 calendar-actu"></i>10-05-2019</span>
                                 <p class="card-description">Le film des Frères Russo a franchi les 2 milliards de
                                     recettes en à peine 2 semaines. Il a ainsi dépassé Titanic et ne devrait pas tarder
                                     à battre Avatar!</p>
@@ -249,16 +252,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <img src="img/dumboactu.jpg" class="img-responsive5 main-img-actu" alt="">
                 <div class="row d-flex justify-content-center h-25">
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 px-md-1">
                         <div class="card actu-card2">
                             <div class="card-body">
                                 <h5 class="card-title">Dumbo</h5>
-                                <p class="card-text mr-3">Sortie Dumbo de Tim Burton</p>
+                                <p class="card-text mr-lg-3">Sortie Dumbo de Tim Burton</p>
                                 <span class="date-actu"><i
-                                        class="far fa-calendar-alt mx-lg-3 mx-2 calendar-actu"></i>10-05-2019</span>
+                                        class="far fa-calendar-alt mx-lg-3 mx-md-1 mx-1 calendar-actu"></i>10-05-2019</span>
                                 <p class="card-description">Dumbo vient d'arriver dans les salles. Ce classic de Disney
                                     a été adapté et réalisé par le réalisateur Tim Burton </p>
                             </div>
@@ -267,17 +270,17 @@
                 </div>
             </div>
         </div>
-        <div class="row actu-row">
-            <div class="col-lg-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
                 <img src="img/festivalcannes.jpg" class="img-responsive5 main-img-actu" alt="">
                 <div class="row d-flex justify-content-center h-25">
-                    <div class="col-lg-10 ">
+                    <div class="col-lg-10 col-md-10 px-md-1">
                         <div class="card actu-card2">
                             <div class="card-body">
                                 <h5 class="card-title">Festival de Cannes</h5>
-                                <p class="card-text mr-3">Tous au Cinéma!!</p>
+                                <p class="card-text mr-lg-3">Tous au Cinéma!!</p>
                                 <span class="date-actu"><i
-                                        class="far fa-calendar-alt mx-lg-3 mx-2 calendar-actu"></i>10-05-2019</span>
+                                        class="far fa-calendar-alt mx-lg-3 mx-md-1 mx-1 calendar-actu"></i>10-05-2019</span>
                                 <p class="card-description">Le Festival de Cannes aura lieu du 14 mai au 25 mai.
                                     Alejandro Gonzalez Inarittu sera le président de ce 72ème festival. </p>
                             </div>
@@ -285,16 +288,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <img src="img/endgame.jpg" class="img-responsive5 main-img-actu" alt="">
                 <div class="row d-flex justify-content-center h-25">
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 px-md-1">
                         <div class="card actu-card2">
                             <div class="card-body">
                                 <h5 class="card-title">Avengers endgames</h5>
-                                <p class="card-text mr-3">Recettes record!!</p>
+                                <p class="card-text mr-lg-3">Recettes record!!</p>
                                 <span class="date-actu"><i
-                                        class="far fa-calendar-alt mx-lg-3 mx-2 calendar-actu"></i>10-05-2019</span>
+                                        class="far fa-calendar-alt mx-lg-3 mx-md-1 mx-1 calendar-actu"></i>10-05-2019</span>
                                 <p class="card-description">Le film des Frères Russo a franchi les 2 milliards de
                                     recettes en à peine 2 semaines. Il a ainsi dépassé Titanic et ne devrait pas tarder
                                     à battre Avatar!</p>
@@ -303,16 +306,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <img src="img/dumboactu.jpg" class="img-responsive5 main-img-actu" alt="">
                 <div class="row d-flex justify-content-center h-25">
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 px-md-1">
                         <div class="card actu-card2">
                             <div class="card-body">
                                 <h5 class="card-title">Dumbo</h5>
-                                <p class="card-text mr-3">Sortie Dumbo de Tim Burton</p>
+                                <p class="card-text mr-lg-3">Sortie Dumbo de Tim Burton</p>
                                 <span class="date-actu"><i
-                                        class="far fa-calendar-alt mx-lg-3 mx-2 calendar-actu"></i>10-05-2019</span>
+                                        class="far fa-calendar-alt mx-lg-3 mx-md-1 mx-1 calendar-actu"></i>10-05-2019</span>
                                 <p class="card-description">Dumbo vient d'arriver dans les salles. Ce classic de Disney
                                     a été adapté et réalisé par le réalisateur Tim Burton </p>
                             </div>
@@ -321,17 +324,17 @@
                 </div>
             </div>
         </div>
-        <div class="row actu-row">
-            <div class="col-lg-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
                 <img src="img/festivalcannes.jpg" class="img-responsive5 main-img-actu" alt="">
                 <div class="row d-flex justify-content-center h-25">
-                    <div class="col-lg-10 ">
+                    <div class="col-lg-10 col-md-10 px-md-1">
                         <div class="card actu-card2">
                             <div class="card-body">
                                 <h5 class="card-title">Festival de Cannes</h5>
-                                <p class="card-text mr-3">Tous au Cinéma!!</p>
+                                <p class="card-text mr-lg-3">Tous au Cinéma!!</p>
                                 <span class="date-actu"><i
-                                        class="far fa-calendar-alt mx-lg-3 mx-2 calendar-actu"></i>10-05-2019</span>
+                                        class="far fa-calendar-alt mx-lg-3 mx-md-1 mx-1 calendar-actu"></i>10-05-2019</span>
                                 <p class="card-description">Le Festival de Cannes aura lieu du 14 mai au 25 mai.
                                     Alejandro Gonzalez Inarittu sera le président de ce 72ème festival. </p>
                             </div>
@@ -339,16 +342,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <img src="img/endgame.jpg" class="img-responsive5 main-img-actu" alt="">
                 <div class="row d-flex justify-content-center h-25">
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 px-md-1">
                         <div class="card actu-card2">
                             <div class="card-body">
                                 <h5 class="card-title">Avengers endgames</h5>
-                                <p class="card-text mr-3">Recettes record!!</p>
+                                <p class="card-text mr-lg-3">Recettes record!!</p>
                                 <span class="date-actu"><i
-                                        class="far fa-calendar-alt mx-lg-3 mx-2 calendar-actu"></i>10-05-2019</span>
+                                        class="far fa-calendar-alt mx-lg-3 mx-md-1 mx-1 calendar-actu"></i>10-05-2019</span>
                                 <p class="card-description">Le film des Frères Russo a franchi les 2 milliards de
                                     recettes en à peine 2 semaines. Il a ainsi dépassé Titanic et ne devrait pas tarder
                                     à battre Avatar!</p>
@@ -357,16 +360,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-4">
                 <img src="img/dumboactu.jpg" class="img-responsive5 main-img-actu" alt="">
                 <div class="row d-flex justify-content-center h-25">
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 col-md-10 px-md-1">
                         <div class="card actu-card2">
                             <div class="card-body">
                                 <h5 class="card-title">Dumbo</h5>
-                                <p class="card-text mr-3">Sortie Dumbo de Tim Burton</p>
+                                <p class="card-text mr-lg-3">Sortie Dumbo de Tim Burton</p>
                                 <span class="date-actu"><i
-                                        class="far fa-calendar-alt mx-lg-3 mx-2 calendar-actu"></i>10-05-2019</span>
+                                        class="far fa-calendar-alt mx-lg-3 mx-md-1 mx-1 calendar-actu"></i>10-05-2019</span>
                                 <p class="card-description">Dumbo vient d'arriver dans les salles. Ce classic de Disney
                                     a été adapté et réalisé par le réalisateur Tim Burton </p>
                             </div>
@@ -376,15 +379,15 @@
             </div>
         </div>
         <div class="row mt-0 mb-5">
-            <div class="col-lg-2 offset-lg-10">
+            <div class="offset-lg-10 col-lg-2 offset-md-8 col-md-4  ">
                 <p class="line"></p>
                 <p class="pagination"><span class="active-pagination mr-1">1</span> 2 3 ... 55 56 57</p>
             </div>
         </div>
     </div>
-    <footer class="container-fluid footer pb-5">
+    <footer class="container-fluid footer">
         <div class="row">
-            <div class="col-lg-11 text-footer">
+            <div class="col-lg-11 col-md-11 text-footer">
                 <p class="title-footer">Contactez-nous</p>
                 <p class="particulars">Association les Films de Plein Air</br>
                     jennifer.viala@filmdepleinair.com
@@ -394,14 +397,14 @@
                 </p>
             </div>
             <div
-                class="col-lg-1 d-flex flex-lg-column flex-sm-row justify-content-between justify-content-lg-end align-items-lg-center">
-                <span class="social-icon my-lg-3">
+                class="col-lg-1 col-md-1 d-flex  flex-lg-column flex-md-column flex-sm-row justify-content-between justify-content-lg-end align-items-lg-center align-items-md-center">
+                <span class="social-icon my-md-3 my-lg-3">
                     <i class="fab fa-facebook-f fa-2x"></i>
                 </span>
-                <span class="social-icon my-lg-3">
+                <span class="social-icon my-md-3 my-lg-3">
                     <i class="fab fa-twitter fa-2x"></i>
                 </span>
-                <span class="social-icon my-lg-3">
+                <span class="social-icon my-md-3 my-lg-3">
                     <i class="fab fa-instagram fa-2x"></i>
                 </span>
             </div>
@@ -415,8 +418,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-    <script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script>
     function reservate() {
         const Toast = Swal.mixin({
             toast: true,
@@ -427,29 +430,29 @@
 
         if (window.matchMedia("(max-width: 575px)").matches) {
             Toast.fire({
-            type: 'success',
-            width: 320,
-            title: "Votre réservation a été enregistrée!",
+                type: 'success',
+                width: 320,
+                title: "Votre réservation a été enregistrée!",
             })
         } else {
             Toast.fire({
-            type: 'success',
-            title: "Votre réservation a été enregistrée!",
+                type: 'success',
+                title: "Votre réservation a été enregistrée!",
             })
         }
         setTimeout(() => {
-            $(".bd-example-modal-lg").modal("hide");        
+            $(".bd-example-modal-lg").modal("hide");
         }, 2000);
-        }
-    (function() {
-         'use strict';
-            window.addEventListener('load', function() {
+    }
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
             var submitButton = document.getElementById("closeButtonModal");
-            submitButton.addEventListener('click', function() {
-        reservate();
-    }, false);
-  }, false);
-})();
+            submitButton.addEventListener('click', function () {
+                reservate();
+            }, false);
+        }, false);
+    })();
 </script>
 
 </html>

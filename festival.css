@@ -407,13 +407,13 @@ z-index: 100;
 /*********************** Main Content Page Actu ************************/
 
 .custom-select{
-    margin-top: 80px;
+    margin-top: 62%;
     width: 5em;
     height: auto;
     border: none;
     font-family: 'Economica', sans-serif;
     letter-spacing: 0.01em;
-    font-size: 42px;
+    font-size: 2.2em;
     color: grey!important;
     background: url(img/arrow.svg) no-repeat right #fff;
     -webkit-appearance: none;
@@ -448,9 +448,6 @@ z-index: 100;
     font-size: 1em;
     color: grey;
 }
-.actu-row{
-    margin: -50px 0!important;
-}
 .card-text{
     display: inline-block;
     width: 50%;
@@ -464,7 +461,7 @@ z-index: 100;
     color: #B70f0a;
 }
 .category:first-of-type{
-    margin-top: 0.20em;
+    margin-top: 0.8em;
     margin-bottom: 0.35em;
 }
 .category:last-of-type{
@@ -533,13 +530,18 @@ z-index: 100;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.3em;
    }
+   #h3Coordonnees{
+    margin-bottom: 50px!important;
+   }
+   #h5Coordonnees{
+    margin-top: 70px!important;
+   }
 /************************** FOOTER ********************************/
 .footer{
     position: relative;
     color: white;
     background-color: #000;
     padding: 20px 70px;
-
 }
 .title-footer{
     font-family: 'Fjalla One', sans-serif;
@@ -579,8 +581,8 @@ z-index: 100;
     }
     .home-header-image{
         display: block!important;
-        height: 70%;
-    }
+        height: calc(100% - 64px);
+        }
     .left-part{
         height: auto;
         padding-top: 20px;
@@ -766,6 +768,13 @@ z-index: 100;
         padding-left: 1em!important;
     }
     /* page actu*/
+    .category:last-of-type{
+        margin-bottom: 3.5em;
+    }
+    .custom-select{
+        margin: 10% 0;
+        font-size: 1.8em;
+    }
     .title-content.eighth::after {
         width: 18%;
         margin-left: 2%;
@@ -783,7 +792,7 @@ z-index: 100;
         width: 40%;
     }
     .sumarry p{
-        font-size: 0.7em;
+        font-size: 0.85em;
     }
     .sumarry h3{
         font-size: 1.2em;
@@ -795,8 +804,8 @@ z-index: 100;
         border: 1px solid #B70f0a;
     }
     .card-text{
-        width: 40%;
-        font-size: 0.7em;
+        width: 52%;
+        font-size: 1em;
         font-weight: bold;
         text-align: center;
     }
@@ -807,6 +816,19 @@ z-index: 100;
         width: 32%;
         margin-left: 22%;
         margin-bottom: -10%;
+    }
+    .footer{
+        position: relative;
+        color: white;
+        background-color: #000;
+        padding: 100px 70px;
+    }
+    /********** Page Contact ***************/
+    #colCoordonnees{
+        text-align: center!important;
+    }
+    #h3Mail{
+        margin-bottom: 40px;
     }
 }
 @media (min-width: 768px) and (max-width: 1024px){
@@ -900,7 +922,7 @@ z-index: 100;
     }
     .around-text{
         font-family: 'Economica', sans-serif;
-        font-size: 30px;
+        font-size: 1.8em;
         font-weight: 400;
         letter-spacing: 0.2em;
     }
@@ -937,6 +959,19 @@ header{
     top: 880px;
     right: 40%;
     z-index: 100;
+}
+#inscriptionButtonHomeMd{
+    position: fixed;
+    background-color: #B70f0a!important;
+    color: white;
+    bottom: 28%;
+    right: 41%;
+    z-index: 100;
+    }
+#inscriptionButtonHomeMd:hover{
+    background-color: #FFF4D4!important;
+    color: #000!important;
+    border: 1px solid #000;
 }
 .left-content,.right-content{
     margin-top: -160px;
@@ -992,4 +1027,89 @@ header{
 .img-responsive1 {
     width: 100%;
     height: 130px;
+}
+.titre-film {
+    font-size: 1.5em!important;
+}
+.icone-lecture {
+    top: 0.5%!important;
+    font-size: 0.8em!important;
+}
+/*********** Page Films ************/
+#inscriptionButtonPageSm{
+    position: fixed;
+    background-color: #B70f0a!important;
+    color: white;
+    bottom: 5%;
+    right: 42%;
+    z-index: 100;
+    }
+#inscriptionButtonPageSm:hover{
+    background-color: #FFF4D4!important;
+    color: #000!important;
+    border: 1px solid #000;
+}
+.topic{
+    font-size: 1.6em;
+}
+.img-responsive3{
+    width: 100%;
+    height: 200px; 
+}
+.figure-caption.text-start {
+    font-size: 1.7em;
+}
+/************* Page Actu ***************/
+.custom-select{
+    margin-top: 60px;
+    width: 5em;
+}
+.actu-card{
+    width: 80%;
+    bottom: 70px;
+    left: 45px;
+    font-size: 0.8em;
+    border-top: 10px solid#B70f0a;
+    border-radius: 0%;
+    font-family: 'Economica', sans-serif;
+}
+.card-body{
+    padding: 0.75em!important;
+}
+.actu-card2{
+    font-size: 0.6em;
+}
+.actu-card2 .card-title{
+    font-size: 1.7em;
+}
+.actu-card2 .card-text{
+    font-weight: bold;
+    width: 59%;
+    font-size: 1.2em!important;
+    padding: 2.21px;
+    text-align: center;
+}
+.actu-card2 .date-actu{
+    font-size: 1.2em;
+    font-weight: 500;
+
+}
+.sumarry h3{
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.sumarry p{
+    font-size: 0.7em;
+}
+.img-responsive4{
+    width: 25%;
+    height: 80%;
+}
+.img-responsive5{
+    height: 150px;
+}
+/************** Page Contact **************/
+#h3Mail{
+    margin-bottom: 40px;
+}
 }

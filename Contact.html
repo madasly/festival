@@ -50,6 +50,9 @@
         data-toggle="modal" data-target=".bd-example-modal-lg">
         Pré-inscriptions
     </button>
+    <button type="button" id="inscriptionButtonHomeMd" class="btn btn-default btn-md d-sm-none d-md-block d-lg-none d-xl-none" data-toggle="modal" data-target=".bd-example-modal-lg">
+        Pré-inscriptions
+    </button> 
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -141,22 +144,22 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.8951549562003!2d2.308591957709293!3d48.87927521717537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fbe98f714c3%3A0xe62425fddeddc402!2sParc+Monceau!5e0!3m2!1sfr!2sfr!4v1558987409192!5m2!1sfr!2sfr"
         frameborder="0" style="border:0" allowfullscreen></iframe>
     <div class="container contact-form">
-        <div class="text-center">
+        <div class="text-center mb-5">
             <h2>Festival Films de Plein Air</h2>
             <p>Vous pouvez nous contacter par mail ou venir nous rencontrer</p>
         </div>
-        <div class="row mt-5">
-            <div class="offset-lg-3 col-lg-3 my-3">
-                <h3 class="mb-3">Nos coordonnées</h3>
+        <div class="row">
+            <div class="offset-lg-3 col-lg-3 col-md-12 my-3 text-sm-center" id="colCoordonnees">
+                <h3 class="mb-3" id="h3Coordonnees">Nos coordonnées</h3>
                 <h5 class="coordonnees font-weight-bold">Notre adresse:</h5>
                 <p class="mt-4 coordonnees">Association les Films de Plein Air</p>
                 <p class="mt-4 coordonnees ">52 Rue Custine</p>
                 <p class="my-4 coordonnees">75018 Paris</p> 
-                <h5 class="mt-5 coordonnees font-weight-bold ">Notre téléphone:</h5>
+                <h5 class="mt-5 coordonnees font-weight-bold" id="h5Coordonnees">Notre téléphone:</h5>
                 <p class="mt-4 coordonnees">01 53 12 34 85</p>
             </div>
             <div class="col-lg-3 my-3">
-                <h3>Contactez par mail</h3>
+                <h3 class="text-sm-center" id="h3Mail">Nous contacter par mail</h3>
                 <form>
                     <div class="form-group">
                         <label for="name" class="col-form-label label-1">Votre nom (obligatoire)</label>
@@ -183,41 +186,62 @@
             </div>
         </div>
     </div>
-    <footer class="container-fluid footer pb-5">
-        <div class="row">
-            <div class="col-lg-11 text-footer">
-                <p class="title-footer">Contactez-nous</p>
-                <p class="particulars">Association les Films de Plein Air</br>
-                    jennifer.viala@filmdepleinair.com
-                </p>
-                <p class="address">52 Rue Custine</br>
-                    75018 Paris
-                </p>
+    <footer class="container-fluid footer">
+            <div class="row">
+                <div class="col-lg-11 col-md-11 text-footer">
+                    <p class="title-footer">Contactez-nous</p>
+                    <p class="particulars">Association les Films de Plein Air</br>
+                        jennifer.viala@filmdepleinair.com
+                    </p>
+                    <p class="address">52 Rue Custine</br>
+                        75018 Paris
+                    </p>
+                </div>
+                <div
+                    class="col-lg-1 col-md-1 d-flex  flex-lg-column flex-md-column flex-sm-row justify-content-between justify-content-lg-end align-items-lg-center align-items-md-center">
+                    <span class="social-icon my-md-3 my-lg-3">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </span>
+                    <span class="social-icon my-md-3 my-lg-3">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </span>
+                    <span class="social-icon my-md-3 my-lg-3">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </span>
+                </div>
             </div>
-            <div
-                class="col-lg-1 d-flex flex-lg-column flex-sm-row justify-content-between justify-content-lg-end align-items-lg-center">
-                <span class="social-icon my-lg-3">
-                    <i class="fab fa-facebook-f fa-2x"></i>
-                </span>
-                <span class="social-icon my-lg-3">
-                    <i class="fab fa-twitter fa-2x"></i>
-                </span>
-                <span class="social-icon my-lg-3">
-                    <i class="fab fa-instagram fa-2x"></i>
-                </span>
-            </div>
-        </div>
-    </footer>
-</body>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        </footer>
+    </body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
 </script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script>
+function sendMessage() {
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'center',
+        showConfirmButton: false,
+        timer: 2000    
+    });
+    if (window.matchMedia("(max-width: 575px)").matches) {
+        Toast.fire({
+            type: 'success',
+            width: 320,
+            title: 'Votre message a été envoyé!',
+        })
+    } else {
+        Toast.fire({
+            type: 'success',
+            title: 'Votre message a été envoyé!',
+        })
+
+    }
+}
     function reservate() {
         const Toast = Swal.mixin({
             toast: true,
@@ -228,40 +252,19 @@
 
         if (window.matchMedia("(max-width: 575px)").matches) {
             Toast.fire({
-            type: 'success',
-            width: 320,
-            title: "Votre réservation a été enregistrée!",
+                type: 'success',
+                width: 320,
+                title: "Votre réservation a été enregistrée!",
             })
         } else {
             Toast.fire({
-            type: 'success',
-            title: "Votre réservation a été enregistrée!",
+                type: 'success',
+                title: "Votre réservation a été enregistrée!",
             })
         }
         setTimeout(() => {
             $(".bd-example-modal-lg").modal("hide");
         }, 2000);
-    }
-    function sendMessage() {
-        const Toast = Swal.mixin({
-            toast: true,
-            position: 'center',
-            showConfirmButton: false,
-            timer: 2000    
-        });
-        if (window.matchMedia("(max-width: 575px)").matches) {
-            Toast.fire({
-                type: 'success',
-                width: 320,
-                title: 'Votre message a été envoyé!',
-            })
-        } else {
-            Toast.fire({
-                type: 'success',
-                title: 'Votre message a été envoyé!',
-            })
-
-        }
     }
     (function () {
         'use strict';
