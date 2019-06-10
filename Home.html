@@ -71,19 +71,10 @@
             <span class="chevron3"><i class="fas fa-angle-down fa-4x"></i></span>
         </div>
     </header>
-    <button type="button" id="inscriptionButton" class="btn btn-default btn-lg" data-toggle="modal" data-target=".bd-example-modal-lg">
+    <button type="button" id="inscriptionButton" class="btn btn-default inscriptionButton1" data-toggle="modal"
+        data-target=".bd-example-modal-lg">
         Pré-inscriptions
     </button>
-    <button type="button" id="inscriptionButton2" class="btn btn-default btn-lg" data-toggle="modal" data-target=".bd-example-modal-lg">
-            Pré-inscriptions
-        </button>
-    <button type="button" id="inscriptionButtonHomeSm" class="btn btn-default btn-sm d-sm-block d-md-none d-lg-none d-xl-none" data-toggle="modal" data-target=".bd-example-modal-lg">
-        Pré-inscriptions
-    </button>  
-    <button type="button" id="inscriptionButtonHomeMd" class="btn btn-default btn-md d-sm-none d-md-block d-lg-none d-xl-none" data-toggle="modal" data-target=".bd-example-modal-lg">
-            Pré-inscriptions
-        </button>   
-
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -100,55 +91,67 @@
                             <label for="name" class="col-form-label label-1">Votre nom (obligatoire)</label>
                             <input type="text" class="form-control input-1" id="name" placeholder="Nom">
                             <div class="valid-feedback">
-                                    Looks good!
-                                  </div>
-                        </div>
-                        
-                        <div class="form-group">
-                                <label for="email" class="col-form-label label-1">Votre email</label>
-                                <input type="email" class="form-control input-1" id="email" placeholder="Email">
-                                <div class="invalid-feedback">
-                                        Looks bad!
-                                      </div>
+                                Looks good!
                             </div>
+                        </div>
+
                         <div class="form-group">
-                                <label for="phone" class="col-form-label label-1">Votre téléphone</label>
-                                <input type="text" class="form-control input-1" id="phone" placeholder="Mobile ou telephone">
+                            <label for="email" class="col-form-label label-1">Votre email</label>
+                            <input type="email" class="form-control input-1" id="email" placeholder="Email">
+                            <div class="invalid-feedback">
+                                Looks bad!
+                            </div>
                         </div>
                         <div class="form-group">
-                                 <label for="reservation-film" class="col-form-label label-1">Votre choix de film</label>
-                                <select class="form-control input-1" id="reservation-film">
-                                    <option selected>Choisissez votre séance</option>
-                                    <option value="ReadyPlayerOne">Ready Player One de Steven Spielberg, Séance du 05 Août à 18h</option>
-                                    <option value="PentagonPapers">Pentagon Papers de Steven Spielberg, Séance du 05 Août à 20h</option>
-                                    <option value="LabyrintheDePan">Le Labyrinthe de Pan de Guillermo Del Toro, Séance du 05 Août à 22h</option>
-                                    <option value="CharlieChocolaterie">Charlie et la Chocolaterie de Tim Burton, Séance du 06 Août à 18h</option>
-                                    <option value="CoeurOcean">Au Coeur de l'Océan de Ron Howard, Séance du 06 Août à 20h</option>
-                                    <option value="FormeDeséance duau">La Forme de l'Eau de Guillermo Del Toro, Séance du 06 Août à 22h</option>
-                                    <option value="AventuresTintin">Les Aventures de Tintin de Ron Howard, Séance du 07 Août à 18h</option>
-                                    <option value="DaVinciCode">Da Vinci Code de Ron Howard, Séance du 07 Août à 20h</option>
-                                    <option value="AngesDemons">Anges et Démons de Ron Howard, Séance du 07 Août à 22h</option>
-                                    <option value="Dumbo">Dumbo de Tim Burton, Séance du 08 Août à 18h</option>
-                                    <option value="BlueJasmine">Blue Jasmine de Woody Allen, Séance du 08 Août à 20h</option>
-                                    <option value="Inferno">Inferno de Tim Burton, Séance du 08 Août à 22h</option>
-                                </select>
-                            </div>
+                            <label for="phone" class="col-form-label label-1">Votre téléphone</label>
+                            <input type="text" class="form-control input-1" id="phone"
+                                placeholder="Mobile ou telephone">
+                        </div>
                         <div class="form-group">
-                                <label for="reservation-number" class="col-form-label label-1">Votre nombre de réservation(s)</label>
-                                <select class="form-control input-1" id="reservation-number">
-                                    <option selected>Choisissez le nombre de places</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                    <option value="6">6</option>
-                                    <option value="7">7</option>
-                                    <option value="8">8</option>
-                                    <option value="9">9</option>
-                                    <option value="10">10</option>
-                                </select>
-                            </div>
+                            <label for="reservation-film" class="col-form-label label-1">Votre choix de film</label>
+                            <select class="form-control input-1" id="reservation-film">
+                                <option selected>Choisissez votre séance</option>
+                                <option value="ReadyPlayerOne">Ready Player One de Steven Spielberg, Séance du 05 Août à
+                                    18h</option>
+                                <option value="PentagonPapers">Pentagon Papers de Steven Spielberg, Séance du 05 Août à
+                                    20h</option>
+                                <option value="LabyrintheDePan">Le Labyrinthe de Pan de Guillermo Del Toro, Séance du 05
+                                    Août à 22h</option>
+                                <option value="CharlieChocolaterie">Charlie et la Chocolaterie de Tim Burton, Séance du
+                                    06 Août à 18h</option>
+                                <option value="CoeurOcean">Au Coeur de l'Océan de Ron Howard, Séance du 06 Août à 20h
+                                </option>
+                                <option value="FormeDeséance duau">La Forme de l'Eau de Guillermo Del Toro, Séance du 06
+                                    Août à 22h</option>
+                                <option value="AventuresTintin">Les Aventures de Tintin de Ron Howard, Séance du 07 Août
+                                    à 18h</option>
+                                <option value="DaVinciCode">Da Vinci Code de Ron Howard, Séance du 07 Août à 20h
+                                </option>
+                                <option value="AngesDemons">Anges et Démons de Ron Howard, Séance du 07 Août à 22h
+                                </option>
+                                <option value="Dumbo">Dumbo de Tim Burton, Séance du 08 Août à 18h</option>
+                                <option value="BlueJasmine">Blue Jasmine de Woody Allen, Séance du 08 Août à 20h
+                                </option>
+                                <option value="Inferno">Inferno de Tim Burton, Séance du 08 Août à 22h</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="reservation-number" class="col-form-label label-1">Votre nombre de
+                                réservation(s)</label>
+                            <select class="form-control input-1" id="reservation-number">
+                                <option selected>Choisissez le nombre de places</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                        </div>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -159,14 +162,13 @@
         </div>
     </div>
     </div>
-  
+
     <div class="container">
         <div class="row">
             <div class="col-md-7 col-lg-8">
                 <div class="left-content">
-                <h2 class="title-content first">A L'HONNEUR</h2>
-                <div>
-                    <div id="carouselHome" class="carousel slide" data-ride="carousel">
+                    <h2 class="title-content first">A L'HONNEUR</h2>
+                    <div id="carouselHome" class="carousel slide mb-sm-4 mb-lg-5" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img src="img/dumboHome.jpg" class="d-block w-100" alt="...">
@@ -202,102 +204,107 @@
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
-                </div>
-                <div class="row justify-content-between section-miniature">
-                    <div class="col-sm-3 py-3"><img src="img/labyrinthedepan.jpg" alt="" class="img-responsive1">
+                    <div class="row justify-content-between mb-sm-2">
+                        <div class="col-sm-3 py-3"><img src="img/labyrinthedepan.jpg" alt="" class="img-responsive1">
+                        </div>
+                        <div class="col-sm-3 py-3"> <img src="img/pentagonpapers.jpg" alt="" class="img-responsive1">
+                        </div>
+                        <div class="col-sm-3 py-3"><img src="img/readyplayerone.jpg" alt="" class="img-responsive1">
+                        </div>
+                        <div class="col-sm-3 py-3"><img src="img/aucoeurdelocean.jpg" alt="" class="img-responsive1">
+                        </div>
                     </div>
-                    <div class="col-sm-3 py-3"> <img src="img/pentagonpapers.jpg" alt="" class="img-responsive1">
+                    <div class="text-right">
+                        <span class="text-actu"><a href="Films.html">Tous les films</a></span>
                     </div>
-                    <div class="col-sm-3 py-3"><img src="img/readyplayerone.jpg" alt="" class="img-responsive1"></div>
-                    <div class="col-sm-3 py-3"><img src="img/aucoeurdelocean.jpg" alt="" class="img-responsive1"> </div>
-                </div>
-                <div class="text-right">
-                    <span class="text-actu">Toutes les films</span>
-                </div>
-                <h2 class="title-content second">LES GRANDS REALISATEURS</h2>
-                <div class="row justify-content-lg-between section-miniature">
-                    <div class="col-sm-12 col-md-4 col-lg-2 mb-3">
-                        <figure class="figure mx-sm-auto">
-                            <img src="img/gdeltoro.jpg" alt="" class="img-responsive2">
-                            <figcaption class="figure-caption text-center">Guillermo del Toro</figcaption>
-                        </figure>
+                    <h2 class="title-content second">LES GRANDS REALISATEURS</h2>
+                    <div class="row justify-content-lg-between section-miniature">
+                        <div class="col-sm-12 col-md-4 col-lg-2 mb-3">
+                            <figure class="figure mx-sm-auto">
+                                <img src="img/gdeltoro.jpg" alt="" class="img-responsive2">
+                                <figcaption class="figure-caption text-center">Guillermo del Toro</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-2">
+                            <figure class="figure">
+                                <img src="img/woodyallen.jpg" alt="" class="img-responsive2">
+                                <figcaption class="figure-caption text-center">Woody Allen</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-2">
+                            <figure class="figure">
+                                <img src="img/stevenspielberg.jpg" alt="" class="img-responsive2">
+                                <figcaption class="figure-caption text-center">Steven Spielberg</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-2">
+                            <figure class="figure">
+                                <img src="img/ronhoward.jpg" alt="" class="img-responsive2">
+                                <figcaption class="figure-caption text-center">Ron Howard</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-2">
+                            <figure class="figure">
+                                <img src="img/timburton.jpg" alt="" class="img-responsive2">
+                                <figcaption class="figure-caption text-center">Tim Burton</figcaption>
+                            </figure>
+                        </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 col-lg-2">
-                        <figure class="figure">
-                            <img src="img/woodyallen.jpg" alt="" class="img-responsive2">
-                            <figcaption class="figure-caption text-center">Woody Allen</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-2">
-                        <figure class="figure">
-                            <img src="img/stevenspielberg.jpg" alt="" class="img-responsive2">
-                            <figcaption class="figure-caption text-center">Steven Spielberg</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-2">
-                        <figure class="figure">
-                            <img src="img/ronhoward.jpg" alt="" class="img-responsive2">
-                            <figcaption class="figure-caption text-center">Ron Howard</figcaption>
-                        </figure>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-2">
-                        <figure class="figure">
-                            <img src="img/timburton.jpg" alt="" class="img-responsive2">
-                            <figcaption class="figure-caption text-center">Tim Burton</figcaption>
-                        </figure>
-                    </div>
-                </div>
                 </div>
             </div>
             <div class="col-md-5 col-lg-4">
                 <div class="right-content">
-                <h2 class="title-content third">ACTUALITES</h2>
-                <div class="paragraphe">
-                    <h4 class="paragraphe-title">Rocketman</h4>
-                    <p class="paragraphe-content">Ce superbe biopic basé sur la vie hors du commun d' Elton John vient de sortir dans les salles</p>
-                </div>
-                <div class="paragraphe">
-                    <h4 class="paragraphe-title">Festival de Cannes</h4>
-                    <p class="paragraphe-content">Le Festival de Cannes se termine avec de belles révélations cette année</p>
-                </div>
-                <div class="paragraphe">
-                    <h4 class="paragraphe-title">Avengers EndGames</h4>
-                    <p class="paragraphe-content">Les fans de comics attendaient la suite des Avengers avec impatience. Découvrez-le dans les salles</p>
-                </div>
-                <div class="paragraphe">
-                    <h4 class="paragraphe-title">Aladdin</h4>
-                    <p class="paragraphe-content">Une nouvelle adaptation de ce Walt Disney mondialement connu dans les salles</p>
-                </div>
-                <div class="text-right">
-                    <span class="text-actu ">Toutes les actus</span>
-                </div>
-                <div class="second-part">
-                    <h2 class="title-content fourth">BANDES ANNONCES</h2>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X4Edh2vySUU"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                    <h2 class="title-content third">ACTUALITES</h2>
+                    <div class="paragraphe">
+                        <h4 class="paragraphe-title">Rocketman</h4>
+                        <p class="paragraphe-content">Ce superbe biopic basé sur la vie hors du commun d' Elton John
+                            vient de sortir dans les salles</p>
                     </div>
+                    <div class="paragraphe">
+                        <h4 class="paragraphe-title">Festival de Cannes</h4>
+                        <p class="paragraphe-content">Le Festival de Cannes se termine avec de belles révélations cette
+                            année</p>
+                    </div>
+                    <div class="paragraphe">
+                        <h4 class="paragraphe-title">Avengers EndGames</h4>
+                        <p class="paragraphe-content">Les fans de comics attendaient la suite des Avengers avec
+                            impatience. Découvrez-le dans les salles</p>
+                    </div>
+                    <div class="paragraphe  mb-md-4">
+                        <h4 class="paragraphe-title">Aladdin</h4>
+                        <p class="paragraphe-content">Une nouvelle adaptation de ce Walt Disney mondialement connu dans
+                            les salles</p>
+                    </div>
+                    <div class="text-right">
+                            <span class="text-actu"><a href="Actu.html">Toutes les actus</a></span>
+                    </div>
+                    <div class="second-part">
+                        <h2 class="title-content fourth">BANDES ANNONCES</h2>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/X4Edh2vySUU"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
 
-                    <div class="bande-annonce">
-                        <p class="titre-film">La forme de l'eau</p><span class="icone-lecture"><i
-                                class="far fa-play-circle fa-3x"></i></span>
-                    </div>
-                    <div class="bande-annonce">
-                        <p class="titre-film">Da Vinci Code</p><span class="icone-lecture"><i
-                                class="far fa-play-circle fa-3x"></i></span>
-                    </div>
-                    <div class="bande-annonce">
-                        <p class="titre-film">Ready Player One</p><span class="icone-lecture"><i
-                                class="far fa-play-circle fa-3x"></i></span>
-                    </div>
-                    <div class="bande-annonce">
-                        <p class="titre-film">Blue Jasmine</p><span class="icone-lecture"><i
-                                class="far fa-play-circle fa-3x"></i></span>
+                        <div class="bande-annonce">
+                            <p class="titre-film">La forme de l'eau</p><span class="icone-lecture"><i
+                                    class="far fa-play-circle fa-3x"></i></span>
+                        </div>
+                        <div class="bande-annonce">
+                            <p class="titre-film">Da Vinci Code</p><span class="icone-lecture"><i
+                                    class="far fa-play-circle fa-3x"></i></span>
+                        </div>
+                        <div class="bande-annonce">
+                            <p class="titre-film">Ready Player One</p><span class="icone-lecture"><i
+                                    class="far fa-play-circle fa-3x"></i></span>
+                        </div>
+                        <div class="bande-annonce">
+                            <p class="titre-film">Blue Jasmine</p><span class="icone-lecture"><i
+                                    class="far fa-play-circle fa-3x"></i></span>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
         </div>
     </div>
@@ -328,13 +335,14 @@
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script>
+        var x = window.matchMedia("(max-width: 767px)");
         function myFunction(x) {
             if (x.matches) { // If media query matches
                 $(function () {
@@ -342,17 +350,17 @@
                         $('html,body').animate({
                             scrollTop: 650
                         }, 1000);
- 
+
                     });
                 });
-            } else if(window.matchMedia("(max-width: 1024px)").matches) {  
+            } else if (window.matchMedia("(max-width: 992px)").matches) {
                 $(function () {
                     $("#chevron").click(function () {
                         $('html,body').animate({
                             scrollTop: 730
                         }, 1000);
-                    }); 
-                });    
+                    });
+                });
             } else {
                 $(function () {
                     $("#chevron").click(function () {
@@ -363,22 +371,21 @@
                     window.addEventListener('scroll', () => {
                         const scrolled = window.scrollY;
 
-                            if (scrolled > 130) {
-                            $('#inscriptionButton').fadeOut(1200); 
-                            $('#inscriptionButton2').fadeIn(1400);
-                                
-                            } else {
-                                $('#inscriptionButton').fadeIn(700); 
-                            $('#inscriptionButton2').fadeOut(600);
-                            };
-                        
+                        if (scrolled > 130) {
+                            $('#inscriptionButton').removeClass('inscriptionButton1');
+                            $('#inscriptionButton').addClass('inscriptionButton2');
+                        } else {
+                            $('#inscriptionButton').removeClass('inscriptionButton2');
+                            $('#inscriptionButton').addClass('inscriptionButton1');
+
+                        };
+
                     });
                 });
             }
-              
+
         }
 
-        var x = window.matchMedia("(max-width: 767px)")
         myFunction(x) // Call listener function at run time
         x.addListener(myFunction) // Attach listener function on state changes
         function reservate() {
@@ -399,21 +406,21 @@
                     type: 'success',
                     title: "Votre réservation a été enregistrée!",
                 })
-            }    
+            }
             setTimeout(() => {
-                $(".bd-example-modal-lg").modal("hide");        
+                $(".bd-example-modal-lg").modal("hide");
             }, 2000);
         }
-        (function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    var submitButton = document.getElementById("closeButtonModal");
-    submitButton.addEventListener('click', function() {
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                var submitButton = document.getElementById("closeButtonModal");
+                submitButton.addEventListener('click', function () {
 
-        reservate();
-    }, false);
-  }, false);
-})();
+                    reservate();
+                }, false);
+            }, false);
+        })();
     </script>
 
 </body>

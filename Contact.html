@@ -42,17 +42,10 @@
             </div>
         </nav>
     </div>
-    <button type="button" id="inscriptionButton3" class="btn btn-default btn-lg d-none d-lg-block" data-toggle="modal"
+    <button type="button" id="inscriptionButton" class="btn btn-default inscriptionButton3" data-toggle="modal"
         data-target=".bd-example-modal-lg">
         Pré-inscriptions
     </button>
-    <button type="button" id="inscriptionButtonPageSm" class="btn btn-default btn-sm d d-sm-block d-lg-none d-xl-none"
-        data-toggle="modal" data-target=".bd-example-modal-lg">
-        Pré-inscriptions
-    </button>
-    <button type="button" id="inscriptionButtonHomeMd" class="btn btn-default btn-md d-sm-none d-md-block d-lg-none d-xl-none" data-toggle="modal" data-target=".bd-example-modal-lg">
-        Pré-inscriptions
-    </button> 
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -221,6 +214,10 @@ integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07j
 </script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script>
+        if (window.matchMedia("(max-width: 992px)").matches) {
+        $('#inscriptionButton').removeClass('inscriptionButton3');
+        $('#inscriptionButton').addClass('inscriptionButton1');
+    }
 function sendMessage() {
     const Toast = Swal.mixin({
         toast: true,
