@@ -3,6 +3,7 @@ body {
     width: 100%;
     height: 100%;
     padding: 0!important;
+    margin: 0!important;
 }
 /******************** Navbar  ***********************/
 
@@ -127,7 +128,6 @@ header{
 }
 .date-button.page-film{
     font-size: 18px;
-    width: 280px;
 }
 .around-text{
     font-family: 'Economica', sans-serif;
@@ -195,48 +195,7 @@ header{
     font-weight: 700;
 }
 
-.inscriptionButton1{
-    position: fixed;
-    background-color: #B70f0a!important;
-    color: white;
-    top: 700px;
-    right: 43%;
-    z-index: 100;
-}
-.inscriptionButton2{
-    position: fixed;
-    background-color: #B70f0a!important;
-    color: white;
-    top: 700px;
-    right: 10%;
-    z-index: 100;
-}
-.inscriptionButton3{
-    position: fixed;
-    background-color: #B70f0a!important;
-    color: white;
-    top: 200px;
-    right: 2%;
-    z-index: 100;
-}
-.inscriptionButton1:hover,.inscriptionButton2:hover,.inscriptionButton3:hover{
-    background-color: #FFF4D4!important;
-    color: #000!important;
-    border: 1px solid #000;
-}
-#inscriptionButton3{
-    position: fixed;
-    background-color: #B70f0a!important;
-    color: white;
-    top: 130px;
-    right: 5%;
-    z-index: 100; 
-}
-#inscriptionButton3:hover{
-    background-color: #FFF4D4!important;
-    color: #000!important;
-    border: 1px solid #000;
-}
+
 
 /*************************** Main Content ****************************/
 
@@ -417,6 +376,7 @@ header{
 
 .custom-select{
     margin-top: 62%;
+    padding-bottom: 0.5em;
     width: 5em;
     height: auto;
     border: none;
@@ -431,9 +391,6 @@ header{
     color: #B70f0a;
 }
 
-.main-img-actu{
-    position: static;
-}
 .actu-card{
     position: relative;
     width: 350px;
@@ -472,7 +429,7 @@ header{
 .calendar-actu{
     color: #B70f0a;
 }
-.category:first-of-type{
+/*.category:first-of-type{
     margin-top: 0.8em;
     margin-bottom: 0.35em;
 }
@@ -481,7 +438,7 @@ header{
 }
 .category:nth-of-type(2),.category:nth-of-type(3){
     margin: 0.45em 0;
-}
+}*/
 .img-responsive4{
     width:25%;
     height: 100%;
@@ -513,10 +470,10 @@ header{
     content: '';
     display: inline-block;  
     border-bottom: 4px solid#B70f0a;
-    width: 47%;
-    margin-left: 34%;
+    margin-left: 18%;
     margin-bottom: -10%;
 }
+
 .active-pagination{
     display: inline;
     color: #B70f0a;
@@ -581,6 +538,9 @@ header{
 @media (min-width: 359px) and (max-width: 767px){
     #brand{
         font-size: 0.65em;
+    }
+    .navbar-toggler-icon {
+        width: 0.8em!important;
     }
     .navbar-nav.nav-pills{
         font-size: 1.2em!important;
@@ -660,6 +620,7 @@ header{
         font-size: 1.3em;
         width: 30%;
         transform: none;
+        z-index: 110;
     }
     .carousel-caption {
         width: 100%;
@@ -697,17 +658,18 @@ header{
     .input-1{
         padding-top: 0;
     }
-.inscriptionButton1{
+.inscriptionButton1, .inscriptionButton3{
+    display: block;
     position: fixed;
     background-color: #B70f0a!important;
     color: white;
     font-size: 0.72em;
-    top: 595px;
-    right: 35%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
     z-index: 100;
-}
-.inscriptionButton3{
-    display: none;
+    border-radius: 0;
 }
     /* Content*/
     .title-content{
@@ -718,7 +680,7 @@ header{
     .title-content.third::after,
     .title-content.fourth::after
     {
-        width: 20%!important;
+        width: 19%!important;
     }
     .title-content.fifth::after,
     .title-content.sixth::after{
@@ -769,6 +731,9 @@ header{
     .last-sentence{
         letter-spacing: 0.3em;
         padding-left: 1em!important;
+    }
+    .img-responsive3{
+        height: auto;
     }
     /* page actu*/
     .category:last-of-type{
@@ -824,11 +789,12 @@ header{
     .rowPagination{
         margin-top: -50px;
     }
+
     .line::after{
-        width: 32%;
-        margin-left: 22%;
+        width: 116px;
+        margin-left: 55px; 
         margin-top: -10%;
-        margin-bottom: -10%;
+        margin-bottom: -8%;
     }
     .footer{
         position: relative;
@@ -844,7 +810,7 @@ header{
         margin-bottom: 40px;
     }
 }
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1023px){
     .home-header-image {
         height: calc(100% - 303px);
         background: linear-gradient(rgba(243, 230, 199, 0.8), rgba(243, 230, 199, 0.8)), url('img/cinema.jpg');
@@ -896,13 +862,13 @@ header{
         font-size: 3.2em;
         line-height: 67px;
         font-weight: 400;
-        letter-spacing: 0.25rem;
+        letter-spacing: 0.2rem;
         margin: -5px 0;
     }
     
     #second-sentence {
         font-family: 'Fjalla One', sans-serif;
-        font-size: 3.9em;
+        font-size: 3.7em;
         font-weight: 700;
         line-height: 78px;
         letter-spacing: 0.03rem;
@@ -911,7 +877,7 @@ header{
     
     #third-sentence {
         font-family: 'Economica', sans-serif;
-        font-size: 2.5em;
+        font-size: 2.53em;
         margin: 5px 0 0 0;
         letter-spacing: 0.5rem;
     }
@@ -931,7 +897,6 @@ header{
     }
     .date-button.page-film{
         font-size: 18px;
-        width: 280px;
     }
     .around-text{
         font-family: 'Economica', sans-serif;
@@ -941,8 +906,9 @@ header{
     }
     .center-text{
         font-family: 'Fjalla One', sans-serif;
-        font-size: 40px;
+        font-size: 2.2em;
         font-weight: 700;
+        text-align: center;
     }
     .chevron{
         position: absolute;
@@ -974,9 +940,7 @@ header{
     right: 42%;
     z-index: 100;
 }
-.inscriptionButton3{
-    display: none;
-}
+
 .left-content,.right-content{
     margin-top: -160px;
 }
@@ -999,7 +963,7 @@ header{
     margin-left: 4%;
 }
 .title-content.fourth::after {
-    width: 25%;
+    width: 24%;
     margin-left: 4%;
 }
 .paragraphe {
@@ -1038,6 +1002,14 @@ header{
     font-size: 0.8em!important;
 }
 /*********** Page Films ************/
+.inscriptionButton3{
+    position: fixed;
+    background-color: #B70f0a!important;
+    color: white;
+    top: 200px;
+    right: 2%;
+    z-index: 100;
+}
 #inscriptionButtonPageSm{
     position: fixed;
     background-color: #B70f0a!important;
@@ -1126,5 +1098,49 @@ header{
 /************** Page Contact **************/
 #h3Mail{
     margin-bottom: 40px;
+}
+}
+@media (min-width: 1024px){
+.inscriptionButton1{
+    position: fixed;
+    background-color: #B70f0a!important;
+    color: white;
+    top: 700px;
+    right: 43%;
+    z-index: 100;
+}
+.inscriptionButton2{
+    position: fixed;
+    background-color: #B70f0a!important;
+    color: white;
+    top: 700px;
+    right: 10%;
+    z-index: 100;
+}
+.inscriptionButton3{
+    position: fixed;
+    background-color: #B70f0a!important;
+    color: white;
+    top: 200px;
+    right: 2%;
+    z-index: 100;
+}
+.inscriptionButton1:hover,.inscriptionButton2:hover,.inscriptionButton3:hover{
+    background-color: #FFF4D4!important;
+    color: #000!important;
+    border: 1px solid #000;
+}
+#inscriptionButton3{
+    position: fixed;
+    background-color: #B70f0a!important;
+    color: white;
+    top: 130px;
+    right: 5%;
+    z-index: 100; 
+}
+#inscriptionButton3:hover{
+    background-color: #FFF4D4!important;
+    color: #000!important;
+    border: 1px solid #000;
 }
 }

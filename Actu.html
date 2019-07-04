@@ -173,37 +173,38 @@
                         </div>
                     </div>
                 </form>
-                <div class="category d-inline-flex">
-                    <img src="img/festivalcannes.jpg" class="img-responsive4 mr-3 main-img-actu" alt="">
-                    <div class="sumarry">
-                        <h3 class="mb-0 mb-lg-2">Festival de Cannes</h3>
-                        <p>Le Festival de Cannes aura lieu du 14 mai au 25 mai. Alejandro Gonzalez Inarittu sera le
-                            président de ce 72ème festival. </p>
-                    </div>
-                </div>
-                <div class="category d-inline-flex">
-                    <img src="img/endgame.jpg" class="img-responsive4 mr-3 main-img-actu" alt="">
-                    <div class="sumarry">
-                        <h3 class="mb-0 mb-lg-2">Avengers endgames</h3>
-                        <p>Le film des Frères Russo a franchi les 2 milliards de recettes en à peine 2 semaines</p>
-                    </div>
-                </div>
-                <div class="category d-inline-flex">
-                    <img src="img/dumboactu.jpg" class="img-responsive4 mr-3 main-img-actu" alt="">
-                    <div class="sumarry">
-                        <h3 class="mb-0 mb-lg-2">Dumbo</h3>
-                        <p>Dumbo vient d'arriver dans les salles. Ce classic de Disney a été adapté et réalisé par le
-                            réalisateur Tim Burton </p>
-                    </div>
-                </div>
-                <div class="category d-inline-flex">
-                    <img src="img/printempscinema.jpg" class="img-responsive4 mr-3 main-img-actu" alt="">
-                    <div class="sumarry">
-                        <h3 class="mb-0 mb-lg-2">Le Printemps du Cinéma</h3>
-                        <p>Au printemps, c' est la fête du cinéma avant l'heure! Profitez de cette occasion pour envahir
-                            les salles pour seulement 4€</p>
-                    </div>
-                </div>
+                <ul class="list-unstyled category">
+                        <li class="media">
+                          <img src="img/festivalcannes.jpg" class="img-responsive4 mr-3" alt="...">
+                          <div class="media-body sumarry">
+                            <h5 class="mb-0 mb-lg-2">Festival de Cannes</h5>
+                            <p>Le Festival de Cannes aura lieu du 14 mai au 25 mai. Alejandro Gonzalez Inarittu sera le
+                            président de ce 72ème festival</p>
+                          </div>
+                        </li>
+                        <li class="media">
+                          <img src="img/endgame.jpg" class="img-responsive4 mr-3" alt="...">
+                          <div class="media-body sumarry">
+                            <h5 class="mb-0 mb-lg-2">Avengers endgames</h5>
+                            <p>Le film des Frères Russo a franchi les 2 milliards de recettes en à peine 2 semaines</p>
+                          </div>
+                        </li>
+                        <li class="media">
+                          <img src="img/dumboactu.jpg" class="img-responsive4 mr-3" alt="...">
+                          <div class="media-body sumarry">
+                            <h5 class="mb-0 mb-lg-2">Dumbo</h5>
+                            <p>Dumbo vient d'arriver dans les salles. Ce classic de Disney a été adapté et réalisé par le
+                            réalisateur Tim Burton</p>
+                          </div>
+                        </li>
+                        <li class="media">
+                                <img src="img/printempscinema.jpg" class="img-responsive4 mr-3" alt="...">
+                                <div class="media-body sumarry">
+                                  <h5 class="mb-0 mb-lg-2">Le Printemps du Cinéma</h5>
+                                  <p>Au printemps, c' est la fête du cinéma avant l'heure! Profitez de cette occasion pour envahir
+                                  les salles pour seulement 4€</p></div>
+                              </li>
+                      </ul>
             </div>
         </div>
         <div class="row limit">
@@ -403,7 +404,7 @@
         </div>
     </footer>
 </body>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
 </script>
@@ -412,10 +413,7 @@
 </script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script>
-        if (window.matchMedia("(max-width: 992px)").matches) {
-        $('#inscriptionButton').removeClass('inscriptionButton3');
-        $('#inscriptionButton').addClass('inscriptionButton1');
-    }
+
     function reservate() {
         const Toast = Swal.mixin({
             toast: true,
